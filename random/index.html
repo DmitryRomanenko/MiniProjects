@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/8f2590edf8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Рандомайзер</title>
+  </head>
+  <body>
+    <div class="generator">
+      <h1 class="generator__title">Рандомайзер чисел</h1>
+      <div class="generator__wrapper">
+        <div class="generator__block">
+          <span class="generator__lable">Минимум</span>
+          <input class="generator__input min" type="number" />
+        </div>
+        <div class="generator__block">
+          <span class="generator__lable">Максимум</span>
+          <input class="generator__input max" type="number" />
+        </div>
+        <div class="generator__block">
+          <span class="generator__lable">Количество</span>
+          <input class="generator__input amount" type="text" />
+        </div>
+        <div class="generator__block">
+          <label class="generator__lable" for="unique">Уникальные</label>
+          <input type="checkbox" class="switch_1" />
+        </div>
+      </div>
+      <button class="generator__button">Генерировать</button>
+      <div class="result__error hide animate__animated animate__shakeX">
+        Неправильно указано количество
+      </div>
+    </div>
+    <div class="result hide animate__animated animate__bounceIn">
+      <span></span>
+      <i class="fa-regular fa-clipboard"></i>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
